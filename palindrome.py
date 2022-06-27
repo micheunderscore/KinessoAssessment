@@ -1,7 +1,6 @@
 # checkPalindrome() is the method for checking palindromes and 
 # prints some pretty outputs to show the user the results!
 def checkPalindrome(title, input):
-
     # Use Python string array magic to read the 
     # string backwards by 1 step >> assign to reverseString
     reverse = input[::-1]
