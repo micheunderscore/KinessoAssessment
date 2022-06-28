@@ -7,7 +7,7 @@ var testString = "Lorem Ipsum is simply dummy text";
 // faster to type.
 repeatCuller = (inString) => {
   // Character bank object to map all of the characters to
-  const charBank = {};
+  let charBank = {};
 
   // for loop going through all of the characters in the string
   for (const char of inString) {
@@ -17,8 +17,7 @@ repeatCuller = (inString) => {
     charBank[char] = (charBank[char] || 0) + 1;
   }
   // Filter out non-repeating characters and return the array
-  return Object.entries(charBank).filter((c) => c[1] > 1);
+  return Object.keys(charBank).join("");
 };
-
 // Call the method and print the results
 console.log(repeatCuller(testString));
