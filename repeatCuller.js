@@ -22,4 +22,10 @@ repeatCuller = (inString) => {
   return Object.keys(charBank).join("");
 };
 // Call the method and print the results
-console.log(repeatCuller(testString));
+console.log(
+  `Original sentence:
+  ${testString}
+  
+Sentence without repeating characters:
+  ${repeatCuller(testString)}`
+);
